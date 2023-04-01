@@ -1,6 +1,6 @@
 var circle = document.getElementById("circle");
 var timestart = 0;
-var time = document.getElementById("time");
+var timeH1 = document.getElementById("time");
 
 function showCircle()
 {
@@ -28,7 +28,7 @@ function randomColor() {
 circle.onclick = function(){
 circle.style.display = 'none';
 setTimeout(showCircle,2000);
-timeend = new Date().getTime();
+timeEnd = new Date().getTime();
 var time = (timeEnd - timestart )/1000;
-time.innerHTML = time +'s';
+timeH1.innerHTML = time +'s';
 }
