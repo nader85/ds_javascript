@@ -26,9 +26,9 @@ function randomColor() {
 }
 
 circle.onclick = function(){
-circle.style.display = 'none';
-setTimeout(showCircle,2000);
-timeEnd = new Date().getTime();
-var time = (timeEnd - timestart )/1000;
-timeH1.innerHTML = time +'s';
+	circle.style.display = 'none';
+	setTimeout(showCircle,2000);
+	timeEnd = new Date().getTime();
+	var time = (timeEnd - timestart )/1000;
+	timeH1.innerHTML = time +'s';
 }
